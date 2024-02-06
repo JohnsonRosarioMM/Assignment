@@ -1,0 +1,21 @@
+
+                                        Objects and its internal representation
+                                                    in Javascript
+                                            
+Introduction:
+
+    In JavaScript, objects are containers for named values. for example, var fruit = {A:Apple, B:Banana, O:Orange};
+The values are written as name:value pairs (name and value separated by a colon).
+
+Object Properties:
+
+    The object properties can be different primitive values, other objects and functions.
+Properties can usually be changed, added, and deleted, but some are read only. for example, fruit.A = Apple.
+Properties are the values associated with a JavaScript object.
+
+Object Methods:
+    An object method is an object property containing a function definition. for example, function(O){return peeling};
+Methods are actions that can be performed on objects.
+
+Conclusion:
+    The above mentioned are just basics of objects in JavaScript. There are lots of functions are in objects.

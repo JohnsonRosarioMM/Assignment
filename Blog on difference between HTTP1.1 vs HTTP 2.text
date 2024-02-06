@@ -1,0 +1,31 @@
+                                    
+                                    HTTP 1.1 VS HTTP 2
+
+Introduction:
+
+    HTTP(Hypertext Transfer Protocal) initiate requests and responses between client computer 
+and DNS(Domain Name System) and other servers with the Protocal.
+Over the years, in the evaluation of HTTP, the major versions are HTTP 1.1 and HTTP 2.
+
+Multiplexing: 
+
+    HTTP/1.1 loads resources one after the other, so if one resource cannot be loaded,
+it blocks all the other resources behind it. But HTTP/2 is able to use a single TCP(Transmission Control Protocol) 
+connection to send multiple streams of data at once so that no one resource blocks any other resource.
+HTTP/2 does this by splitting data into binary-code messages and numbering these messages.
+
+Server push: 
+    Typically, a server only serves content to a client device if the client asks for it.
+However, this approach is not always practical for modern webpages, which often involve
+several dozen separate resources that the client must request. HTTP/2 solves this problem 
+by allowing a server to "push" content to a client before the client asks for it.
+
+Header compression:
+    Small files load more quickly than large ones. To speed up web performance, both HTTP/1.1 and HTTP/2 compress
+HTTP messages to make them smaller. However, HTTP/2 uses a more advanced compression method called
+HPACK that eliminates redundant information in HTTP header packets. This eliminates a few bytes from every HTTP packet.
+
+Conclusion:
+    As you can see from this point-by-point analysis, HTTP/2 differs from HTTP/1.1 in many ways,
+with some features providing greater levels of control that can be used to better optimize web application performance 
+and other features simply improving upon the previous protocol.
